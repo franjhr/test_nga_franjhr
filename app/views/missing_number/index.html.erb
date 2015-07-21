@@ -1,0 +1,12 @@
+<h1>Challenge 2: Missing Number</h1>
+
+<%= form_tag("/missing_number/find_missing_number", method: "get") do %>
+    <%= label_tag('sequence', "Sequence:") %>
+    <%= text_field_tag('sequence') %>
+    <%= submit_tag("Find") %>
+<% end %>
+
+<p>Sequence example: 8:2,1,4,5,3,7,8 --> 6 is the deleted item</p>
+
+<p><%= link_to "back", root_path %></p>
+

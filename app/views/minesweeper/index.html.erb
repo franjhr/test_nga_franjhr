@@ -1,0 +1,21 @@
+<h1>Challenge 3: Minesweeper</h1>
+
+<%= form_tag("/minesweeper/count_mines", method: "get") do %>
+    <%= label_tag('sequence', "Sequence:") %>
+    <%= text_area('sequence',:text, :cols => 30, :rows => 20, :placeholder => "O O O O X O O O O O\r\nX X O O O O O O X O\r\nO O O O O O O O O O\r\nO O O O O O O O O O\r\nO O O O O X O O O O") %>
+    <%= submit_tag("Find") %>
+<% end %>
+
+<p>Sequence example: </p>
+
+<label>O O O O X O O O O O</label><br>
+<label>X X O O O O O O X O</label><br>
+<label>O O O O O O O O O O</label><br>
+<label>O O O O O O O O O O</label><br>
+<label>O O O O O X O O O O</label><br>
+
+<p>You can copy and paste the sequence or part of the sequence shown above.</p>
+<p>(IMPORTANT: put space between elements. Ejm: O X O...)</p>
+
+
+<p><%= link_to "back", root_path %></p>

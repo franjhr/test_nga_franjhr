@@ -1,0 +1,11 @@
+<h1>Challenge 1: Chessboard</h1>
+
+<%= form_tag("/chessboard/generate_chess_board", method: "get") do %>
+    <%= label_tag('cols', "Cols:") %>
+    <%= text_field_tag('cols') %>
+    <%= label_tag('rows', "Rows:") %>
+    <%= text_field_tag('rows') %>
+    <%= submit_tag("Generate") %>
+<% end %>
+
+<p><%= link_to "back", root_path %></p>
